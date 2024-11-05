@@ -1,4 +1,4 @@
-***Azure*** ***AI***
+# *Azure* *AI*
 
 Azure AI Language is a cloud-based service that provides services for
 developers to build cognitive intelligence into applications without
@@ -49,8 +49,7 @@ infrastructure more effectively and securely.
 >
 > • Vision: Analyse content in images and videos
 
-<img src="./huq3awoa.png"
-style="width:6.025in;height:2.29167in" />
+![Alt text](https://jamiemaguire.net/wp-content/uploads/2023/08/Pasted-2.png)
 
 > **Azure** **AI** **Services**
 
@@ -103,7 +102,7 @@ the key services offered by Azure AI Vision:
 > movement of people on a video feed and produces events that other
 > systems can respond to.
 
-**Language**
+## Language
 
 Azure AI Language is a managed service provided by Microsoft Azure for
 developing natural language processing applications12. Here are some of
@@ -141,12 +140,12 @@ the key features:
 > **Service**: Access GPT-powered advanced language models through
 > Language Studio to quickly scan and suggest labels for your content.
 
-<img src="./dlflvsgg.png" style="width:3.75in;height:3.05in" />
+![Alt text](https://bernhardwenzel.com/images/posts/2022/docker-logo.png)
 
 **Containers** **in** **Azure** **AI** **Services**
 
-Azure AI services provide several [<u>Docker
-containers</u>](https://www.docker.com/what-container) that let you use
+Azure AI services provide several Docker
+containers  that let you use
 the same APIs that are available in Azure, on-premises. Using these
 containers gives you the flexibility to bring Azure AI services closer
 to your data for compliance, security or other operational reasons.
