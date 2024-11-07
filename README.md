@@ -202,7 +202,8 @@ Azure OpenAI Service is powered by a diverse set of models with different capabi
 >
 > • Text to speech (Preview) : A series of models in preview that can synthesize text to speech.
 >
->**AI** **Models**
+**AI** **Models**
+
 **o1-preview** **and** **o1-mini** **models** **limited** **access**
 The Azure OpenAI o1-preview and o1-mini models are specifically designed to tackle reasoning and problem-solving tasks with increased focus and capability. These models spend more time processing and understanding the user's request, making them exceptionally strong in areas like science, coding, and math compared to previous iterations.
 > o1-preview : The most capable model in the o1 series, offering enhanced reasoning abilities.
