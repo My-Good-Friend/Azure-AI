@@ -167,8 +167,8 @@ are some of the Azure AI services that are available in containers:
 >
 > • **Speech** **Containers**: These include services like Speech to
 > Text, Custom Speech to Text, Neural Text to Speech, and Speech
-> Language Identification1.
->
+> Language Identification.
+
 > • **Decision** **Container**: This includes the Anomaly Detector
 > service.
 >
@@ -179,3 +179,54 @@ Each of these containers contains a subset of functionality from
 services in Azure AI services. The core AI technology, pricing tiers,
 API keys, and API signature are the same between the container and the
 corresponding cloud services.
+
+**Azure** **OpenAI** **Service** **Models**
+Azure OpenAI Service is powered by a diverse set of models with different capabilities and price points. Model availability varies by region and cloud.
+
+> • o1-preview and o1-mini : Limited access models, specifically designed to tackle reasoning and problem-solving tasks with increased focus and capability.
+> • GPT-4o & GPT-4o mini & GPT-4 Turbo : The latest most capable Azure OpenAI models with multimodal versions, which can accept both text and images as input.
+> • GPT-4o audio : A GPT-4o model that supports low-latency, "speech in, speech out" conversational interactions.
+> • GPT-4 : A set of models that improve on GPT-3.5 and can understand and generate natural language and code.
+> • GPT-3.5 : A set of models that improve on GPT-3 and can understand and generate natural language and code.
+> • Embeddings : A set of models that can convert text into numerical vector form to facilitate text similarity.
+> • DALL-E : A series of models that can generate original images from natural language.
+> • Whisper : A series of models in preview that can transcribe and translate speech to text.
+> • Text to speech (Preview) : A series of models in preview that can synthesize text to speech.
+
+>**AI** **Models**
+**o1-preview** **and** **o1-mini** **models** **limited** **access**
+The Azure OpenAI o1-preview and o1-mini models are specifically designed to tackle reasoning and problem-solving tasks with increased focus and capability. These models spend more time processing and understanding the user's request, making them exceptionally strong in areas like science, coding, and math compared to previous iterations.
+> o1-preview : The most capable model in the o1 series, offering enhanced reasoning abilities.
+> o1-mini :  A faster and more cost-efficient option in the o1 series, ideal for coding tasks requiring speed and lower resource consumption.
+
+**GPT-4o** **audio**
+The gpt-4o-realtime-preview model is part of the GPT-4o model family and supports low-latency, "speech in, speech out" conversational interactions. GPT-4o audio is designed to handle real-time, low-latency conversational interactions, making it a great fit for support agents, assistants, translators, and other use cases that need highly responsive back-and-forth with a user.
+> gpt-4o-realtime-preview : Audio model for real-time audio processing
+
+**GPT-4**
+GPT-4 is the predecessor to GPT-4 Turbo. Both the GPT-4 and GPT-4 Turbo models have a base model name of gpt-4. You can distinguish between the GPT-4 and Turbo models by examining the model version.
+>gpt-4 Version 0314
+>gpt-4 Version 0613
+>gpt-4-32k Version 0613
+
+**Embeddings**
+text-embedding-3-large is the latest and most capable embedding model. Upgrading between embeddings models is not possible. In order to move from using text-embedding-ada-002 to text-embedding-3-large you would need to generate new embeddings.
+>text-embedding-3-large
+>text-embedding-3-small
+>text-embedding-ada-002
+
+The third generation embeddings models support reducing the size of the embedding via a new dimensions parameter. Typically larger embeddings are more expensive from a compute, memory, and storage perspective. Being able to adjust the number of dimensions allows more control over overall cost and performance. The dimensions parameter is not supported in all versions of the OpenAI 1.x Python library, to take advantage of this parameter we recommend upgrading to the latest version: pip install openai --upgrade.
+
+OpenAI's MTEB benchmark testing found that even when the third generation model's dimensions are reduced to less than text-embeddings-ada-002 1,536 dimensions performance remains slightly better.
+
+**DALL-E**
+The DALL-E models generate images from text prompts that the user provides. DALL-E 3 is generally available for use with the REST APIs. DALL-E 2 and DALL-E 3 with client SDKs are in preview.
+
+**Whisper**
+The Whisper model is a speech to text model from OpenAI that you can use to transcribe audio files. The model is trained on a large dataset of English audio and text. The model is optimized for transcribing audio files that contain speech in English. The model can also be used to transcribe audio files that contain speech in other languages. The output of the model is English text.
+
+
+
+ 
+
+
