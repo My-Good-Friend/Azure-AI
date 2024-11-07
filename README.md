@@ -180,7 +180,7 @@ services in Azure AI services. The core AI technology, pricing tiers,
 API keys, and API signature are the same between the container and the
 corresponding cloud services.
 
-**Azure** **OpenAI** **Service** **Models**
+**Azure** **OpenAI** **Service** **Models** 
 
 Azure OpenAI Service is powered by a diverse set of models with different capabilities and price points. Model availability varies by region and cloud.
 
